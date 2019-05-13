@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js04 - if</title>
+</head>
+<body>
+    <script language="JavaScript">
+    // Objetivo: ler 2 valores independente da ordem que foram digitados e apresentalos
+    // em ordem crescente
+
+    // Definição de variáveis
+    var jsN1;
+    var jsN2;
+    var jsN3;
+
+    // Entrada de dados
+    jsN1 = parseInt(window.prompt('Informe o valor do primeiro numero:', '00'));
+    jsN2 = parseInt(window.prompt('Informe o valor do segundo numero:', '00'));
+
+    // Saída de dados sem classificação
+    document.write('Número 1 digitado = ' + jsN1);
+    document.write('<br>Número 2 digitado = ' + jsN2);
+
+    // Saída de dados com condicional if
+    if (jsN1 > jsN2){
+        jsN3 = jsN1;
+        jsN1 = jsN2;
+        jsN2 = jsN3;
+    }
+    
+   document.write('<p><b>Classificação em Ordem Crescente:</b> ' + jsN1 +' e ' + jsN2);
+
+    </script>
+    
+</body>
+</html>
